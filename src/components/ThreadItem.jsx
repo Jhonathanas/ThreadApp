@@ -47,7 +47,7 @@ function ThreadItem({
             </p>
           </div>
         </header>
-        <button type='button' onClick={onTalkClick} onKeyDown={onTalkClick}>
+        <div onClick={onTalkClick} onKeyDown={onTalkClick}>
           <article>
             <h3 className="text-xl font-semibold mb-1">{title}</h3>
             <p className="text-gray-700 mb-2">{parse(body)}</p>
@@ -56,7 +56,7 @@ function ThreadItem({
               {category}
             </p>
           </article>
-        </button>
+        </div>
         <div className="flex justify-between">
           <div className="flex items-center mt-4">
             <VoteButton

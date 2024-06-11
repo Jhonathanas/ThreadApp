@@ -67,10 +67,10 @@ VoteButton.propTypes = {
   authUser: PropTypes.string.isRequired,
 };
 
-VoteButton.defaultProps = {
-  neutralizeVote: () => {},
-  upVote: () => {},
-  downVote: () => {},
-};
+// VoteButton.defaultProps = {
+//   neutralizeVote: () => {},
+//   upVote: () => {},
+//   downVote: () => {},
+// };
 
 export default VoteButton;

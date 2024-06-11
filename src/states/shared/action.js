@@ -15,7 +15,7 @@ function asyncUsersAndThreads() {
       dispatch(receiveThreadActionCreator(threads));
       dispatch(hideLoading());
     } catch (error) {
-      alert(error);
+      alert(error.message);
     }
     dispatch(hideLoading());
   };

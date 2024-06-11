@@ -1,4 +1,3 @@
-/* eslint-disable eol-last */
 import { ActionType } from './action';
 
 function usersReducer(users = [], action = {}) {
