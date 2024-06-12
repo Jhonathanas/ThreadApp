@@ -44,7 +44,7 @@ describe('Login spec', () => {
 
   it('should display alert when email and password are wrong', () => {
     cy.get('input[placeholder="Email"]').type('testuser@gmail.com');
-    cy.get('input[placeholder="Password"').type('testpassword');
+    cy.get('input[placeholder="Password"]').type('testpassword');
 
     cy.get('button')
       .contains(/^Submit$/)
@@ -55,7 +55,7 @@ describe('Login spec', () => {
     });
   });
 
-  it('should display homepage when email dan password are correct', () => {
+  it('should display homepage when email and password are correct', () => {
     cy.get('input[placeholder="Email"]').type('ok@ok.com');
     cy.get('input[placeholder="Password"]').type('123456');
 

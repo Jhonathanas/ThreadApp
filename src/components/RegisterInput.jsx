@@ -1,12 +1,11 @@
-/* eslint-disable eol-last */
-import React from "react";
-import PropTypes from "prop-types";
-import useInput from "../hooks/useInput";
+import React from 'react';
+import PropTypes from 'prop-types';
+import useInput from '../hooks/useInput';
 
 function RegisterInput({ register }) {
-  const [name, onNameChange] = useInput("");
-  const [email, onEmailChange] = useInput("");
-  const [password, onPasswordChange] = useInput("");
+  const [name, onNameChange] = useInput('');
+  const [email, onEmailChange] = useInput('');
+  const [password, onPasswordChange] = useInput('');
 
   return (
     <div className="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">

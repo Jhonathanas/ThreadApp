@@ -1,4 +1,3 @@
-/* eslint-disable eol-last */
 function postedAt(date) {
   const dateNow = new Date();
   const datePosted = new Date(date);

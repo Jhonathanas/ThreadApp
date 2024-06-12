@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import PropTypes from 'prop-types';
 
 export default function LeaderBoardItem({ user, score }) {
   return (
@@ -19,5 +19,8 @@ export default function LeaderBoardItem({ user, score }) {
 
 LeaderBoardItem.propTypes = {
   score: PropTypes.number.isRequired,
-  user: PropTypes.arrayOf(string).isRequired,
+  user: PropTypes.shape({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
 };

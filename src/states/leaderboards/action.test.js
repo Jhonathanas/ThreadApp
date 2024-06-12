@@ -1,8 +1,9 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { 
+  describe, it, expect, vi, beforeEach, afterEach 
+} from 'vitest';
 import { hideLoading, showLoading } from 'react-redux-loading-bar';
 import api from '../../utils/api';
 import { 
-  ActionType, 
   receiveLeaderboardsActionCreator, 
   asyncPopulateLeaderboards 
 } from './action';
@@ -17,19 +18,19 @@ const fakeErrorResponse = new Error('Something went wrong');
 describe('asyncPopulateLeaderboards thunk', () => {
   beforeEach(() => {
     // Backup original implementation
-    api._getLeaderBoards = api.getLeaderBoards;
-    
+    api.originalGetLeaderBoards = api.getLeaderBoards;
+
     // Mock alert
     global.alert = vi.fn();
   });
 
   afterEach(() => {
     // Restore original implementation
-    api.getLeaderBoards = api._getLeaderBoards;
+    api.getLeaderBoards = api.originalGetLeaderBoards;
     
     // Delete backup
-    delete api._getLeaderBoards;
-    
+    delete api.originalGetLeaderBoards;
+
     // Clear alert mock
     delete global.alert;
   });
