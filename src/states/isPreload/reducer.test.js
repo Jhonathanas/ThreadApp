@@ -1,3 +1,12 @@
+/**
+ * Testing Scenario
+ *
+ * - isPreloadReducer
+ *   - should return the initial state when no action is provided
+ *   - should handle SET_IS_PRELOAD action
+ *   - should return the current state when an unknown action is provided
+ */
+
 import { describe, it, expect } from 'vitest';
 import isPreloadReducer from './reducer'; // Adjust the import path if necessary
 import { ActionType } from './action'; // Adjust the import path if necessary

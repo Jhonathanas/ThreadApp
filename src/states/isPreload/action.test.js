@@ -1,3 +1,11 @@
+/**
+ * Testing Scenario
+ *
+ * - asyncPreloadProcess
+ *   - should handle successful profile fetching
+ *   - should handle profile fetching failure
+ */
+
 import { 
   describe, it, expect, beforeEach, vi
 } from 'vitest';

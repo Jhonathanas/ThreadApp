@@ -1,3 +1,10 @@
+/**
+ * Testing Scenario
+ *
+ * - LeaderBoardItem component
+ *   - should render user name and score correctly
+ */
+
 import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';

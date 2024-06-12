@@ -1,3 +1,13 @@
+/**
+ * Testing Scenario
+ *
+ * - authUserReducer
+ *   - should return the initial state when no action is provided
+ *   - should handle SET_AUTH_USER action
+ *   - should handle UNSET_AUTH_USER action
+ *   - should return the current state when an unknown action is provided
+ */
+
 import { describe, it, expect } from 'vitest';
 import authUserReducer from './reducer';
 import { ActionType } from './action';
